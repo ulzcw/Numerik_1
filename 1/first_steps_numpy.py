@@ -19,3 +19,9 @@ if __name__ == "__main__":
     print("b)", b1, A1, b2, A2, sep="\n\n")
 
     print("c)", b1[0], b2[-1], A1[0, :], A2[:, -1], sep="\n\n")
+    print(A[1, :] - 2*A[0, :])
+
+    print(A[1, :], A[0, :], A[1, :] / A[0, :], np.diag(A), sep="\n")
+
+    A[2, :] = A[1, :] + A[0, :]
+    print(A)
